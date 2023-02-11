@@ -3,7 +3,7 @@ import java.util.Set;
 
 public class CustomerDatabase {
     // set of customers registered
-    Set<Customer> customers;
+    private Set<Customer> customers;
 
     // create singleton instance of CustomerDatabase
     private static CustomerDatabase customerDatabaseInstance;
@@ -26,7 +26,7 @@ public class CustomerDatabase {
     // search customer by name
     public Set<Customer> searchCustomerByName(String name){
         Set<Customer> customersWithSameName = new HashSet<>();
-        for(Customer customer : customers){
+        for(Customer customer : this.customers){
             if (name.equals(customer.getName())){
                 customersWithSameName.add(customer);
             }
@@ -37,7 +37,7 @@ public class CustomerDatabase {
     // search customer by surname
     public Set<Customer> searchCustomerBySurname(String name){
         Set<Customer> customersWithSameSurname = new HashSet<>();
-        for(Customer customer : customers){
+        for(Customer customer : this.customers){
             if (name.equals(customer.getSurname())){
                 customersWithSameSurname.add(customer);
             }

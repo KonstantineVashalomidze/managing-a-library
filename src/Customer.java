@@ -25,7 +25,5 @@ public class Customer {
         return booksBorrowedForNDays;
     }
 
-    public void setBooksBorrowedForNDays(HashMap<Book, Integer> booksBorrowedForNDays) {
-        this.booksBorrowedForNDays = booksBorrowedForNDays;
-    }
+
 }
