@@ -2,6 +2,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class BookStorage {
+    // all books
     private Set<Book> allBooks;
 
     // book storage constructor
