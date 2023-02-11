@@ -14,7 +14,7 @@ public class BookStorage {
     }
 
     // get Book from storage using name
-    public Book getBookByName(String name){
+    public Book searchBookByName(String name){
         for(Book desiredBook : this.allBooks){
             if (name.equals(desiredBook.getName())){
                 return desiredBook;
@@ -43,6 +43,8 @@ public class BookStorage {
     public void removeBook(Book certainBook){
         this.allBooks.remove(certainBook);
     }
+
+    // customer can borrow book
 
     // get single instance of CustomerDatabase
     public static BookStorage getInstance() {

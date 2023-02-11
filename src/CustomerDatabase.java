@@ -27,7 +27,8 @@ public class CustomerDatabase {
     public Set<Customer> searchCustomerByName(String name){
         Set<Customer> customersWithSameName = new HashSet<>();
         for(Customer customer : this.customers){
-            if (name.equals(customer.getName())){
+            String rame = customer.getName();
+            if (name.equals(rame)){
                 customersWithSameName.add(customer);
             }
         }
