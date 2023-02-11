@@ -5,6 +5,9 @@ public class BookStorage {
     // all books
     private Set<Book> allBooks;
 
+    // create singleton instance for BooksStorage
+    private static BookStorage booksStorageInstance;
+
     // book storage constructor
     private BookStorage(){
         this.allBooks = new HashSet<>();
@@ -41,4 +44,12 @@ public class BookStorage {
         this.allBooks.remove(certainBook);
     }
 
+    // get single instance of CustomerDatabase
+    public static BookStorage getInstance() {
+        if (booksStorageInstance == null) {
+            booksStorageInstance = new BookStorage();
+        }
+        return booksStorageInstance;
+    }
+    
 }
