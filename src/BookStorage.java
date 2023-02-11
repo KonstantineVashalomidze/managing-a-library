@@ -5,7 +5,7 @@ public class BookStorage {
     private Set<Book> allBooks;
 
     // book storage constructor
-    BookStorage(){
+    private BookStorage(){
         this.allBooks = new HashSet<>();
     }
 
