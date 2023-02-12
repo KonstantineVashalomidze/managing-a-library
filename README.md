@@ -22,18 +22,3 @@ Functionality:
 * The system should generate reports on the most popular books, the busiest days and times, and the most active customers.
 
 
-Design patterns to use:
-
-    Factory pattern: Use this pattern to create books in the system. 
-    
-    Abstract Factory pattern: Use this pattern to create different types of books, such as fiction and non-fiction, in the system.
-    
-    Builder pattern: Use this pattern to build complex books, such as reference books, in the system.
-    
-    Prototype pattern: Use this pattern to create new books based on existing ones in the system.
-    
-    Singleton pattern: Use this pattern to ensure that only one instance of the library management system exists.
-    
-    Observer pattern: Use this pattern to update the availability of books and the borrowing history of customers as books are borrowed and returned.
-    
-    Note that this is just one approach to implementing the Library Management System project, and you can choose to modify or improve it based on your own design choices. The important thing is to practice using different design patterns to solve different problems in the system.
